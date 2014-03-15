@@ -1,0 +1,22 @@
+<html>
+<head>
+<title>Primes</title>
+</head>
+<body>
+<h2>Prime numbers</h2>
+<form action="/display" method="post">
+<p>Prime numbers are as follows</p>
+<% if(results.length === 0) { %>
+<p>There are no prime numbers</p><br>
+<% } else { %>
+<table>
+<% for (var i=0; i<results.length; i++) { %>
+<tr>
+  <td><%=results[i]%></td>
+</tr>
+<% } %>
+</table>
+<% } %>
+</form>
+</body>
+</html>
